@@ -11,8 +11,9 @@
 	border: 1px solid var(--very-light-pink);
 }
 .my-order-content{
-	height: inherit; 
-	max-height: 5000px;
+	overflow-y: scroll;
+	max-height: 500px;
+	scroll-behavior: smooth;
 }
 .title-container {
 	display: flex;

@@ -1,7 +1,6 @@
 import React, { useContext } from 'react';
 import OrderItem from '@components/OrderItem.jsx';
 import '@styles/MyOrder.scss';
-import icon from '@icons/flechita.svg'
 import AppContext from '@contexts/AppContext.js'
 import sumTotel from '@hooks/sumTotel.js';
 
@@ -10,7 +9,6 @@ const MyOrder = () => {
 	return (
 		<aside className="MyOrder">
 			<div className="title-container">
-				<img src={icon} alt="arrow" />
 				<p className="title">My order</p>
 			</div>
 			<div className="my-order-content">

@@ -7,16 +7,18 @@ import MyOrder from "@containers/MyOrder.jsx";
 import shoppiCart from '@icons/icon_shopping_cart.svg'
 import AppContext from '@contexts/AppContext.js'
 import verifyBuy from "@hooks/verifyBuy.js";
+import MobileMenu from "./Mobile-menu.jsx";
 const correo = 'ceazoffi@gmail.com'
 
 const Header = () => {
     const [toggle, setToggle]= useState(false);
     const { state } = useContext(AppContext);
     const [toggleOrders, setToggleOrders] = useState(false);
+    const [toggleMobile, setToggleMobile] = useState(false);
 
     return ( 
         <nav>
-    <img src={menu} alt="menu" className="menu"/>
+    <img src={menu} alt="menu" className="menu" onClick={() => {setToggleMobile(!toggleMobile)}}/>
     <div className="navbar-left">
     <img src={logo} alt="logo" className="nav-logo"/>
     <ul>
@@ -51,6 +53,7 @@ const Header = () => {
 </div>
 {toggle ? <Menu /> : null}
 {toggleOrders ? <MyOrder /> : null}
+{toggleMobile ? <MobileMenu /> : null}
 </nav>
     )
 } 

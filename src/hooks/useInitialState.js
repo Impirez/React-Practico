@@ -17,10 +17,14 @@ const useInitialState = () => {
             cart: state.cart.filter(items => items.id !== products.id),
         })
     }
+    const isInCart = (productId) => {
+        return state.cart.some(product => product.id === productId)
+    }
     return {
         state,
         addToCart,
         removeFromCart,
+        isInCart
     }
 }
 export default useInitialState;
