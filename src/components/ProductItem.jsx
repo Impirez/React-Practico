@@ -1,7 +1,6 @@
 import React, { useContext } from 'react';
 import '../styles/ProductItem.scss';
 import AppContext from '@contexts/AppContext'
-import icon from '@icons/bt_add_to_cart.svg'
 import addedToCartIcon from '@icons/bt_added_to_cart.svg'
 import addToCartIcon from '@icons/bt_add_to_cart.svg'
 

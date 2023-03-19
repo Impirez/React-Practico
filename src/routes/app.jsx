@@ -13,7 +13,7 @@ import Checkout from '@pages/Checkout.jsx';
 import Orders from '@pages/Orders.jsx';
 import NotFound from '@pages/NotFound.jsx';
 import useInitialState from '@hooks/useInitialState.js';
-import '../styles/global.css';
+import '@styles/global.css';
 
 export const App = () => {
   const initialState = useInitialState();
